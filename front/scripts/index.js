@@ -1,12 +1,16 @@
-console.log(tempData);
+//console.log(tempData);
 
 const container = document.querySelector(".section__pelis");
 
 //const pelis = tempData
 
-const elementos = (tempData) => {
+$.get("https://students-api.up.railway.app/movies", (data) => {
+    agregarContenedor(data)
+});
 
-    const { title, year, director, duration, genre, rate, poster  } = tempData;
+const elementos = (data) => {
+
+    const { title, year, director, duration, genre, rate, poster  } = data;
 
     //const mapeo = tempData.map((item) => {
 
@@ -47,21 +51,17 @@ const elementos = (tempData) => {
     return card;
 }
 
-const agregarContenedor = (tempData) => {
-
-    
-    //container.innerHTML = "";
-    
-    const elementoshtml = tempData.map((pelis) => elementos(pelis));
-    elementoshtml.forEach((pelis) => {
-        container.appendChild(pelis)
+const agregarContenedor = (data) => {
    
+    const elementoshtml = data.map((pelis) => elementos(pelis));
+    elementoshtml.forEach((pelis) => {
+        container.appendChild(pelis)  
     })};
 
 
    document.addEventListener("DOMContentLoaded", (e) => {
         //e.preventDefault();
-        agregarContenedor(tempData)
+        agregarContenedor(data)
      });
     
 
