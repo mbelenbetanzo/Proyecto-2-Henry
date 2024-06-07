@@ -1,18 +1,11 @@
-//console.log(tempData);
-
-const container = document.querySelector(".section__pelis");
-
-//const pelis = tempData
 
 $.get("https://students-api.up.railway.app/movies", (data) => {
     agregarContenedor(data)
 });
 
-const elementos = (data) => {
+const elementos = (pelis) => {
 
-    const { title, year, director, duration, genre, rate, poster  } = data;
-
-    //const mapeo = tempData.map((item) => {
+    const { title, year, director, duration, genre, rate, poster  } = pelis;
 
     const card = document.createElement("div");
     const titulo = document.createElement("h3");
@@ -51,6 +44,8 @@ const elementos = (data) => {
     return card;
 }
 
+const container = document.querySelector(".section__pelis");
+
 const agregarContenedor = (data) => {
    
     const elementoshtml = data.map((pelis) => elementos(pelis));
@@ -59,9 +54,6 @@ const agregarContenedor = (data) => {
     })};
 
 
-   document.addEventListener("DOMContentLoaded", (e) => {
-        //e.preventDefault();
-        agregarContenedor(data)
-     });
+ 
     
 
