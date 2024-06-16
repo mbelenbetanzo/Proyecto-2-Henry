@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinesphere</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="icon" href="./assets/CINESPHERE logo.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header__contain-logo">
+            <img class="header__logo" src="./assets/CINESPHERE logo.png" alt="logo pequeño"/>
+        </div>
+        <nav class="header__nav">
+             <a class="header__nav-link"   href="./index.html">Inicio</a>
+             <a class="header__nav-link"   href="./tecnologia.html">Tecnologia en el cine</a>
+             <a class="header__nav-link"   href="./recomendadas.html">Recomendadas</a>
+             
+            </nav>
+        <div class="container-login-mobile">
+            <img class="container-login-mobile_img"  src="./assets/healthicons--ui-user-profile.svg" alt="dino">
+        </div>
+    </header>
+    <section class="section_img">
+        <img src="./assets/imgform2.svg" class="imgsection" alt="imgform">
+    </section>
+    <section class="section_titulo">
+        <h1 class="section__h1">Agrega acá tus peliculas favoritas😁</h1>
+    </section>
+    <section class="section">
+        <form class="section__all" id="form">
+        <h2 class="section__text">♥</h2>
+        <label class="section__label">Título</label>
+        <input class="section__input" id="inputTitle"  type="text" placeholder="Ingresa el nombre de la peli👀">
+        <label class="section__label">Año de estreno</label>
+        <input class="section__input" id="inputDescription" type="number" min="1800" max="2024" required placeholder="Ingresá el año de estreno😁">
+        <label class="section__label">Director</label>
+        <input class="section__input" id="inputDescription" type="text" placeholder="Quien la dirigió?🙌">
+        <label class="section__label">Duración</label>
+        <input class="section__input" id="inputDescription" type="number" min="1" max="300" required placeholder="Ingresa la duración en minutos⌛">
+        <label class="section__label">Elegí la puntuación del 1 al 10</label>
+        <input type="range" class="section__input" id="inputDescription" name="rating" min="1" max="10" step="0.1" value="5.0">
+        <label class="section__label">URL</label>
+        <input class="section__input" type="url"  id="inputUrl"  placeholder="Pegá acá la url de la imagen😎">
+        
+        <div class="section__checkbox">
+        <h3 class="section__labelg">Elegi los géneros:</h3>
+
+        <div class="section__checkboxg">
+        <input type="checkbox" id="genero-accion" name="genero[]" value="Accion">
+        <label for="genero-accion">Acción</label>
+
+        <input type="checkbox" id="genero-comedia" name="genero[]" value="Comedia">
+        <label for="genero-comedia">Comedia</label>
+
+        <input type="checkbox" id="genero-aventura" name="genero[]" value="Aventura">
+        <label for="genero-aventura">Aventura</label>
+        </div>
+
+        <div class="section__checkboxg">
+        <input type="checkbox" id="genero-animacion" name="genero[]" value="Animacion">
+        <label for="genero-animacion">Animacion</label>
+
+        <input type="checkbox" id="genero-drama" name="genero[]" value="Drama">
+        <label for="genero-drama">Drama</label>
+
+        <input type="checkbox" id="genero-sci-fi" name="genero[]" value="Sci-fi">
+        <label for="genero-sci-fi">Sci-fi</label>
+        </div>
+
+        <div class="section__checkboxg">
+        <input type="checkbox" id="genero-fantasia" name="genero[]" value="Fantasia">
+        <label for="genero-fantasia">Fantasia</label>
+
+        <input type="checkbox" id="genero-terror" name="genero[]" value="Terror">
+        <label for="genero-terror">Terror</label>
+
+        <input type="checkbox" id="genero-romance" name="genero[]" value="Romance">
+        <label for="genero-romance">Romance</label>
+        </div>
+        </div>
+        <button class="section__btn" type="submit">AGREGAR</button>
+        <p class="section__p">No hay peliculas cargadas aún😟</p>
+        </form>
+
+
+
+
+        <container id="container">
+            <!--ACA VA EL TEMPLATE DE CADA CARD-->
+        </container>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="section__catalogo">
+        <img src="./assets/3.png" alt="pochoclos" class="section__catalogo__img">
+        <h3 class="section__catalogo__titulo" >¿Seguis buscando algo que ver?</h3>
+        <p class="section__catalogo__descripcion" >Explora todo nuestro catálogo</p>
+        <button class="section__catalogo__btn">VER TODO</button>
+    </section>
+    <footer class="footer">
+        <img src="./assets/CINESPHERE logo.png" class="footer__logo" alt="">
+        <div class="footer__redes">
+            <img  class="footer__logos" src="./assets/mdi--instagram.svg" alt="ig">
+            <img class="footer__logos"  src="./assets/ic--outline-facebook.svg" alt="fb">
+            <img  class="footer__logos" src="./assets/mdi--twitter.svg" alt="tw">
+            <img  class="footer__logos" src="./assets/ic--baseline-whatsapp.svg" alt="wp">
+        </div>
+        <h3 class="footer__texto">2024 - Cinesphere - Todos los derechos reservados 👾</h3>
+    </footer>
+
+
+</body>

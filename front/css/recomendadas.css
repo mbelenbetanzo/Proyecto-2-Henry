@@ -212,3 +212,14 @@ body {
 .section__catalogo__img{
     margin-top: 25px;
 }
+
+.agregar{
+    background-color: orangered;
+    border-radius: 20px;
+    padding: 8px;  
+   
+};
+
+.agregar:hover{
+    background-color: white;
+}
