@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+.body_css {
     
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(0, 0, 0);
 }
 
-.header{
+.header_css{
     background: url(../assets/header.png);
     background-color: black;
     width: 100%;
@@ -22,34 +22,51 @@ body {
     box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.75);
     position: fixed;
     z-index: 100;
-    height: 80px;
+    height: 100px;
     top: 0;
 }
 .header__logo{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 7px;
     padding: 5px;
 }
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .header__nav-link {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 80px;
+    margin-left: 170px;
     
 }
 
-.agregar{
+.btnform {
     background-color: orangered;
     border-radius: 20px;
     padding: 8px;  
-   
-};
-
-.agregar:hover{
-    background-color: white;
+    cursor: pointer;
+    width: 340px;
+    height: 55px;
+    font-size: 20px;
+    border: none; /* Añadir esta línea para eliminar cualquier borde predeterminado */
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
+
+.btnform:hover {
+    background-color: white;
+    color: black; /* Añadir para que el texto sea visible sobre fondo blanco */
+}
+
+
 
 
 .container-login-mobile {
@@ -65,10 +82,7 @@ body {
     cursor: pointer;
 }
 
-.header__nav {
-    margin-right: 100px;
-    display: block;
-}
+
 
 .imgsection{
     
@@ -78,8 +92,8 @@ body {
 }
 
 .section_img{
-    height: 600px;
-    margin-top: 90px;
+    height: 700px;
+    margin-top: 120px;
 }
 
 .section_form{
@@ -88,7 +102,7 @@ body {
     height: 500px;
 }
 
-.section{
+.section_css{
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: auto;
@@ -101,38 +115,31 @@ body {
 
 .section__all {
     background: url(../assets/header\ \(2\).png);
-    width: 900px;
+    width: 1000px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border-radius: 20%;
+    border-radius: 10px;
     margin-top: 70px; 
     margin-bottom: 100px;
     padding: 15px;
+    border: 2px solid white;
 }
 
 .section__label{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    margin-left: 190px;
+    margin-left: 130px;
     margin-bottom: 10px;
 }
 
-.section__labelg{
-    color: white;
-    font-size: 1px;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-bottom: 20px;
-    align-self: center;
-    text-align: center;
-}
+
 
 .section__text{
     color: red;
-    font-size: 45px;
+    font-size: 70px;
     margin-bottom: 45px;
     align-self: center;
     font-weight: bold;
@@ -140,21 +147,22 @@ body {
 }
 
 .section__input{
-    width: 500px;
+    width: 700px;
     border: none;
-    border-radius: 15px;
-    height: 50px;
+    border-radius: 20px;
+    height: 67px;
     align-self: center;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     color: orangered ;
     font-weight: bold;
+    font-size: 25px;
 }
 
 .section__btn{
-    width: 500px;
+    width: 600px;
     border: 3px solid orangered;
     border-radius: 15px;
-    height: 40px;
+    height: 60px;
     align-self: center;
     margin-bottom: 25px;
     font-weight: bolder;
@@ -162,7 +170,8 @@ body {
     background: url(../assets/images/header.png);
     cursor: pointer;
     transition: 0.2s all;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 25px;
 }
 
 .section__input:focus{
@@ -191,6 +200,8 @@ body {
     font-weight: bolder;
     align-self: center;
     margin-bottom: 20px;  
+    font-size: 30px;
+    margin-top: 20px;
 }
 
 .section_titulo{
@@ -202,7 +213,7 @@ body {
 }
 
 .section__checkbox{
-    margin-top: 20px 0px 0px 25px;
+    margin-top: 20px 0px 0px 0px;
     
     
 }
@@ -215,15 +226,20 @@ body {
     width: 500px;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 20px;
-    margin-left: 180px;
+    font-size: 30px;
+    margin-left: 200px;
     margin-bottom: 25px;
     height: auto;
 }
 .section__labelg{
     color: white;
-    font-size: 25px;
-}
+    font-size: 30px;
+        font-weight: bold;
+        margin-left: -10px;
+        margin-bottom: 40px;
+        align-self: center;
+        text-align: center;
+    }
 
 
 
@@ -301,7 +317,7 @@ body {
     margin-top: 25px;
 }
 
-.footer{
+.footer_css{
     background-color: orangered;
     height: 80px;
     display: flex;

@@ -1,5 +1,32 @@
+const { Movies } = require ("../models/Movie")
 
-const peliculas = [
+
+/*module.exports = {
+  infopeliculas: async () => {
+    const peliculas = await Movie.find();//a traves del modelo hacemos la conexion para pedir las colecciones
+    console.log('Películas encontradas:', peliculas);
+    return peliculas;
+  }
+}*/
+
+const infopeliculas = async () => {
+  try {
+  const peliculas = await Movies.find();
+  console.log("hay algo?",peliculas); //array vacioooo
+  return peliculas;
+} catch (error) {
+  console.error('Error al obtener las películas:', error);
+  throw error;
+}
+}
+
+//infopeliculas()
+module.exports = { infopeliculas };
+
+
+
+
+/*const peliculas = [
     {
       title: "Guardians of the Galaxy Vol. 2",
       year: 2017,
@@ -37,4 +64,4 @@ const infopeliculas = () => {
 }
 
 
-module.exports = { infopeliculas }
+module.exports = { infopeliculas }*/

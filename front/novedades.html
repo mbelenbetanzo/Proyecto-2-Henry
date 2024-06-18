@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="./css/novedades.css">
     <link rel="icon" href="./assets/CINESPHERE logo.png">
 </head>
-<body>
-    <header class="header">
+<body class="body_bo">
+    <header class="header_bo">
         <div class="header__contain-logo">
             <img class="header__logo" src="./assets/CINESPHERE logo.png" alt="logo pequeño"/>
         </div>
         <nav class="header__nav">
              <a class="header__nav-link"   href="./index.html">Inicio</a>
-             <a class="header__nav-link"   href="#">Recomendadas</a>
-             <a class="header__nav-link agregar" href="./form.html">Agrega tu peli acá😎</a>
+             <a class="header__nav-link"   href="./recomendadas.html">Novedades</a>
+             <a class="header__nav-link" href="./form.html">Recomendadas</a>
         </nav>
         <div class="container-login-mobile">
-            <img class="container-login-mobile_img"  src="./assets/healthicons--ui-user-profile.svg" alt="dino">
+            <a class="btnformm" href="./form.html">Agrega tu peli acá😎</a>
         </div>
     </header>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -32,13 +32,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/chihiro.jpeg" class="d-block w-100" alt="...">
+            <img src="./assets/hp.svg" class="d-block w-100" alt="harrypotter">
           </div>
           <div class="carousel-item">
-            <img src="./assets/harrypotter.jpeg" class="d-block w-100" alt="...">
+            <img src="./assets/akaza.svg" class="d-block w-100" alt="mugentrain">
           </div>
           <div class="carousel-item">
-            <img src="./assets/spiderman.jpeg" class="d-block w-100" alt="...">
+            <img src="./assets/spiderman.svg" class="d-block w-100" alt="spiderman">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -50,47 +50,157 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <h1 class="titulo">Noticias del mundo cinematográfico</h1>
 
-      <section class="cards container ">
-        <div class="row">
-        <div class="card col-lg-4 me-7 ju" style="width: 18rem;">
-            <img src="./assets/1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="divTitulo">
+      <h1 class="titulo text-center">Próximos estrenos</h1>
+      </div>
+
+      <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-2 m-3 p-3">
+                <div class="card border-0 text-center" style="width: 20rem;">
+                    <img src="./assets/estrenos1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display-4">El cielo rojo</h5>
+                        <p class="card-text lead mb-4">Cuatro jóvenes pasan unos días en una casa de verano en el Mar Báltico, algunos no se conocen entre sí. A causa del calor, abundan los incendios forestales en la zona. Con ese argumento, el alemán Christian Petzold, propone una película fascinante, también muy divertida</p>
+                        <a href="https://www.imdb.com/" target="_blank"  class="btn btn-warning">Leer más</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card col-lg-4 me-7" style="width: 18rem;">
-            <img src="./assets/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="col-lg-2 m-3 p-3">
+                <div class="card border-0 text-center" style="width: 20rem;">
+                    <img src="./assets/estreno2.jpg" class="card-img-top editar" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display-4">Inside Out 2</h5>
+                        <p class="card-text lead mb-4">Una de las mejores películas de Disney Pixar. Si aquella se metía en la cabeza de la pequeña Riley para ver cómo trabajaban sus emociones, esta vuelve a hacer lo mismo pero con una Riley ya adolescente y con algunas emociones nuevas… entre ellas la temida y temible Ansiedad.</p>
+                        <a href="https://www.imdb.com/" target="_blank"  class="btn btn-warning">Leer más</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card col-lg-4 me-7" style="width: 18rem;">
-            <img src="./assets/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="col-lg-2 m-3 p-3">
+                <div class="card border-0 text-center" style="width: 20rem;">
+                    <img src="./assets/estreno3.jpeg" class="card-img-top editar" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display-4">Memory</h5>
+                        <p class="card-text lead mb-4">Doloroso drama sobre los distintos mecanismos de la memoria. Apoyado en la magnífica interpretación de la pareja protagonista, parte del encuentro entre una mujer que se esfuerza por olvidar su doloroso pasado y un hombre que desearía poder recordarlo todo.</p>
+                        <a href="https://www.imdb.com/" target="_blank"  class="btn btn-warning">Leer más</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card col-lg-4 me-7" style="width: 18rem;">
-            <img src="./assets/CINESPHERE naranja (400 x 400 px).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="col-lg-2 m-3 p-3">
+                <div class="card border-0 text-center" style="width: 20rem;">
+                    <img src="./assets/estreno 4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display-4">Flame</h5>
+                        <p class="card-text lead mb-4">Esta pelicula es una comedia que parte de un reencuentro estival para hablar de las complejidades de la familia. El punto de partida es el siguiente: una mujer se prepara para pasar un fin de semana con los suyos en su casa de Cadaqués y tendran que ver como se comportan.</p>
+                        <a href="https://www.imdb.com/" target="_blank"  class="btn btn-warning">Leer más</a>
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-2 m-3 p-3">
+              <div class="card border-0 text-center" style="width: 20rem;">
+                  <img src="./assets/estreno5.jpeg" class="card-img-top editar" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title display-4">Indeseables</h5>
+                      <p class="card-text lead mb-4">En una propuesta que aúna cine de denuncia y acción, el director vuelve a hablar de injusticia social, de clase y de racismo. Tras la repentina muerte del alcalde de un barrio de clase trabajadora, un médico joven e idealista coge el cargo. Su idea inicial es continuar con la política de rehabilitación.</p>
+                      <a href="https://www.imdb.com/" target="_blank"  class="btn btn-warning">Leer más</a>
+                  </div>
+              </div>
           </div>
+
+
         </div>
-      </section>
-      <h2 class="titulo">Novedades de la semana</h2>
+    </div>
+    
+<div class="divTitulo">
+    <h2 class="titulo">Novedades del mundo cinematográfico</h2>
+  </div>
 
-      <h2 class="titulo">Próximos estrenos</h2>
+    <div class="container mt-5">
+      <div class="card mb-3 border-0">
+          <div class="row g-0">
+              <div class="col-md-4 align-items-center mt-3 me-5">
+                  <img src="https://okdiario.com/img/2024/06/16/stephen-king-marc-andrewgetty-images.-635x358.jpg" class="img-fluid rounded-start" alt="Cinesphere logo">
+              </div>
+              <div class="col-md-7">
+                  <div class="card-body">
+                      <h2 class="card-title display-5 ">Para Stephen King ésta es la escena más terrorífica de la historia del cine</h2>
+                      <p class="card-text lead">La secuencia en cuestión no es la de un filme cualquiera. Hablamos de la cinta madre de toda una moda que llegaría años después y que tendría su propio cine de explotación: La noche de los muertos vivientes. Dirigida por George A. Romero, la carrera como cineasta de este padre del cine de zombis se inició a finales de los 60, muy cerquita temporalmente del estreno de Stephen King como autor con la publicación de ‘Carrie’ en 1974. </p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-5 estrenos">
+    <div class="card mb-3 border-0">
+        <div class="row g-0">
+            <div class="col-md-4 align-items-center mt-1 me-5" ">
+                <img src="https://telefe-static2.akamaized.net/media/539348/whatsapp-image-2024-06-07-at-072159-1.jpeg?v=20240607075118000&format=extraLarge&width=929&height=523&mode=crop" class="img-fluid rounded-start" alt="Cinesphere logo">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <h2 class="card-title display-5">Abrió la inscripción de películas para el 2do FIC de la UBA</h2>
+                    <p class="card-text lead">La Universidad de BA anuncian la realización de la segunda edición del Festival Internacional de Cine 2024 (FIC.UBA), que se llevará a cabo desde el 16 al 22 de octubre en su sede central de la FADU.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+  <div class="card mb-3 border-0">
+      <div class="row g-0">
+          <div class="col-md-4 align-items-center mt-1 me-5">
+              <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1mgagV.img?w=768&h=432&m=6" class="img-fluid rounded-start" alt="Cinesphere logo">
+          </div>
+          <div class="col-md-7">
+              <div class="card-body">
+                  <h2 class="card-title display-5">'Furiosa' sigue liderando una taquilla</h2>
+                  <p class="card-text lead">En esta situación, Furiosa: De la saga Mad Max dirigida por George Miller y protagonizada por Anya Taylor-Joy ha seguido manteniéndose en el número uno por segunda semana consecutiva, en su segundo fin de semana habría recaudado, según los datos aún provisionales de ComScore Movies, 378 mil euros.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container mt-5">
+    <div class="card mb-3 border-0">
+        <div class="row g-0">
+            <div class="col-md-4 align-items-center mt-5 me-5">
+                <img src="https://th.bing.com/th/id/R.248b1f3073e0ef2e37b2193a199d620d?rik=dQozfbtRCzlBhQ&riu=http%3a%2f%2fcinecarmelita.com%2fwp-content%2fuploads%2f2019%2f11%2fFonprocine.png&ehk=8Ua9o4X%2fjQ2YQyBw4Z3hO8iC6x%2fqcSRAQ4hYn3Km0Ww%3d&risl=&pid=ImgRaw&r=0" class="img-fluid rounded-start" alt="Cinesphere logo">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <h2 class="card-title display-4">DGCINE lanza convocatoria del Fonprocine</h2>
+                    <p class="card-text lead">Se lanza la 13.a edición del Concurso Público del Fondo para la Promoción Cinematográfica 2024 (Fonprocine), e invita a los cineastas dominicanos a participar en la convocatoria que estará abierta hasta el 13 de septiembre de este mismo año.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 15 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="section__catalogo_bo">
+  <img src="./assets/3.png" alt="pochoclos" class="section__catalogo__img">
+  <h3 class="section__catalogo__titulo" >¿Seguis buscando algo que ver?</h3>
+  <p class="section__catalogo__descripcion" >Explora todo nuestro catálogo</p>
+  <button class="section__catalogo__btn">VER TODO</button>
+</section>
+<footer class="footer_bos">
+  <img src="./assets/CINESPHERE logo.png" class="footer__logo" alt="">
+  <div class="footer__redes">
+      <img  class="footer__logos" src="./assets/mdi--instagram.svg" alt="ig">
+      <img class="footer__logos"  src="./assets/ic--outline-facebook.svg" alt="fb">
+      <img  class="footer__logos" src="./assets/mdi--twitter.svg" alt="tw">
+      <img  class="footer__logos" src="./assets/ic--baseline-whatsapp.svg" alt="wp">
+  </div>
+  <h3 class="footer__texto">2024 - Cinesphere - Todos los derechos reservados 👾</h3>
+
+</footer>
 
     
 </body>

@@ -10,7 +10,7 @@ const router = Router();
 //aca se crea una nueva instancia de router, un router en express se utiliza para definir
 //rutas separadas de la aplicacion principal, aca lo "contratamos"
 
-router.use("/movies", moviesrouter);
+router.use("/Movies", moviesrouter);
 //"/movies": Es la ruta base. Significa que todas las rutas que empiecen con /movies
 //serán manejadas por lo que pongamos después de la coma.
 //Aquí estamos diciéndole al conserje: "Oye, cuando alguien pregunte por /movies,
