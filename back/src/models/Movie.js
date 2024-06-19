@@ -37,7 +37,6 @@ const movieSchema = new mongoose.Schema({
     }
 });
 
-const Movies = mongoose.model("Movies", movieSchema, "Movies");//este es el traductor, la conexion especifica
-//EL TERCER PARAMETRO ES PARA ESPECIFICARLE SIN VUELTAS A QUE 
+const Movies = mongoose.model("Movies", movieSchema, "Movies");
 module.exports = { Movies }; 
 
