@@ -1,6 +1,35 @@
 const { Movies } = require ("../models/Movie")
 
 
+
+const infopeliculas = async () => {
+  try {
+  const peliculas = await Movies.find();
+  console.log("hay algo?",peliculas); 
+  return peliculas;
+} catch (error) {
+  console.error('Error al obtener las películas:', error);
+  throw error;
+}
+};
+
+const createPelicula = async (data) => {
+  try{
+    const pelicula = await Movies.create(data);
+    return pelicula;
+  } catch (error) {
+    console.error("Error al crear la peli", error);
+    throw error;
+  }
+}
+
+
+
+//infopeliculas()
+module.exports = { infopeliculas, createPelicula };
+
+
+
 /*module.exports = {
   infopeliculas: async () => {
     const peliculas = await Movie.find();//a traves del modelo hacemos la conexion para pedir las colecciones
@@ -8,23 +37,6 @@ const { Movies } = require ("../models/Movie")
     return peliculas;
   }
 }*/
-
-const infopeliculas = async () => {
-  try {
-  const peliculas = await Movies.find();
-  console.log("hay algo?",peliculas); //array vacioooo
-  return peliculas;
-} catch (error) {
-  console.error('Error al obtener las películas:', error);
-  throw error;
-}
-}
-
-//infopeliculas()
-module.exports = { infopeliculas };
-
-
-
 
 /*const peliculas = [
     {

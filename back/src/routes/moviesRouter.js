@@ -5,7 +5,12 @@ const moviesrouter = Router();//nuevo conserje, especilizado solo en rutas relac
 
 
 //Le damos al conserje una tarea específica:
-moviesrouter.get("/", moviescontroller.getAllPosts); //es un objeto que tiene varios controladores dentro nose nontendi
+moviesrouter.get("/", moviescontroller.getAllPosts);
+moviesrouter.post("/", moviescontroller.createPost) //PARA POSTEAR
+
+module.exports =  moviesrouter;
+
+//es un objeto que tiene varios controladores dentro nose nontendi
 //solo barra porque ya accedi a las movies en el otro, se hace asi por ocnvencion, y aca solo se pone /
 //ESTO DEFINE UNA RUTA, ES COMO DECIR CUANDO ALGUIEN VAYA A LA DIRECCION /MOVIES/ HAZ LO SIGUIENTE Y LLAMA AL CONTROLADOR
 //QUE EJECUTE ESA FUNCION ESPECIFICA
@@ -16,5 +21,4 @@ Piensa en moviescontroller como un libro de instrucciones y getAllPosts es una p
 una tarea específica (como obtener todas las películas). */
 
 
-module.exports =  moviesrouter;
 

@@ -1,5 +1,5 @@
 
-const { infopeliculas } = require ("../services/movieservice"); 
+const { infopeliculas, createPelicula } = require ("../services/movieservice"); 
 
 module.exports = {
     getAllPosts: async (req, res) => {
@@ -16,6 +16,24 @@ module.exports = {
         error: error.message
     })
 }
+},
+
+createPost: async (req, res) => {
+    try{
+        const movieData = req.body
+        const movie = await createPelicula(movieData);
+        res.status(201).json({
+            message: "Pelicula creada con exito",
+            data: movie
+        });
+    } catch (error) {
+        res.status(500).json({
+            message: "Error al crear pelicula",
+            error: error.message
+        });
+    }
 }
+
+
 }
 
