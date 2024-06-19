@@ -9,9 +9,7 @@
 
 import axios from 'axios';
 import { agregarContenedor } from './agregarcontenedor';
-import { boton, valores } from './form';
-
-
+import { boton, valores} from './form';
 
 const pelis = async () => {
     try {
@@ -40,6 +38,8 @@ boton.addEventListener("click", () => {
     }
     valores(title, year, director, duration, rate, poster, generos);
 });
+
+
 
 
 

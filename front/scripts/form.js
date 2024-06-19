@@ -3,6 +3,7 @@
 
     // EXPORTAR BOTON PARA HACER EL EVENT LISTENER EN INDEX
     const boton = document.querySelector(".section__btn");
+
     
     const valores = (title, year, director, duration, rate, poster, generos) => {
         const movieValues = {
@@ -28,8 +29,12 @@
     }
     
     export { boton, valores };
+
+
+ 
+
     
-    
+   
     
 
 

@@ -1,7 +1,7 @@
 const { Router } = require ("express");
 
 
-const moviesrouter = require ("./moviesrouter"); 
+const moviesrouter = require ("./moviesRouter"); 
 
 const router = Router();
 
